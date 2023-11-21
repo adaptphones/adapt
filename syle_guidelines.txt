@@ -1,0 +1,25 @@
+Style Guidelines
+
+Overall Look and Feel of Adapt
+===============================
+Since Adapt is a tech company that sells smartphones, the overall feel of the website should match up to the competition. Thus, we want the website to feel like a modern tech website that properly showcases the AdaptPhone product and allows users to buy and order products.
+The look of the website should be sleek, minimalist, and simple to use. It should be very user friendly; users should be able to navigate where they want with ease.
+
+Colours
+========
+As a tech phone company, we want sleek and modern colours to match the rest of the industry, so that customers can easily understand what the website is trying to convey.
+Color Palettes/Choices:
+Use black, white, and grey gradients(already implemented in css file)
+Use various shades of blues accent colours to emphasize parts
+
+Iconography
+===========
+We have agreed on various icons to use that will be found in the project’s ‘img’ folder. Inside will contain various assets such as logos, tech icons, and phone designs.
+
+Typography/Font
+==========
+We will be using Poppins (Sans Serif) from Google Fonts.
+
+Clickable Elements (Buttons and Links)
+=======
+Clickable elements will light up white when a user hovers over it. Some buttons will actually darken when hovered as well.

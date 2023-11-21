@@ -1,0 +1,78 @@
+/*EXTRA STYLES FOR SUPPORT PAGE for organization- ANDRIUS*/
+
+body {
+  background-color: #6790b6;
+}
+.support_module{
+    width: 300px; 
+    height: 230px;
+    max-height: 200px;
+    border-radius: 15px; 
+    background-color: #f0f0f0; 
+    padding: 40px 30px; 
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+    float: left;
+}
+
+.support_content {
+    width: 100%; 
+    height: 600px;
+    max-width: 750px; 
+    border-radius: 15px; 
+    margin: 0px 30px;
+    padding:40px;  
+    background-color: #110438; 
+    float: left;
+  }
+
+  .faq_section{
+    width: 100%; 
+    height: 600px;
+    max-width: 350px; 
+    border-radius: 15px; 
+    margin: 0px 0px 0px 50px;
+    padding:40px;  
+    background-color: #ffffff; 
+    float: left;
+  }
+
+  .main_area{
+    width: 100%; /* Adjust width as needed */
+    height: 800px;
+    padding:80px ;
+  }
+  .picture_container{
+    width: 80%;
+    height: 500px;
+    max-height: 100%;
+    border-radius: 15px; 
+    background-image: url('/assets/img/supportbanner.webp');
+    background-size: cover;
+    margin:100px auto 50px;
+  }
+
+  .page_title{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100px; 
+  }
+
+  .suphead{
+    font-size: 50px;
+  }
+  .faq_list{
+    color: #1d96be;
+    margin: 5px 0px;
+   
+  }
+  .faq_header{
+    color: black;
+    font-size: 18px;
+  }
+
+  .module_text{
+    color: black;
+    font-size: 20px;
+  }
