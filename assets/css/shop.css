@@ -1,5 +1,11 @@
 .shop-title {
-    font-size: 80px;
+    top: 300px;
+    width: 100%;
+    font-size: 120px;
+    position: fixed;
+    text-align: center;
+    color: var(--text-gradient);
+    transition: opacity 0.2s ease;
 }
 
 .shop-container {
@@ -10,6 +16,26 @@
     justify-content: space-between;
     max-width: 900px;
     margin: 0 auto;
+}
+
+.arrow-container {
+    position: relative;
+    top: 100px;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.arrow-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: opacity 0.2s ease;
 }
 
 .shop-item {
@@ -50,4 +76,8 @@
 
 .shop-item .buy-button .checkout-link {
     color: #FFFFFF;
+}
+
+.hidden {
+    opacity: 0;
 }
