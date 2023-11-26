@@ -103,9 +103,9 @@ function getTitleOffset(scroll) {
 }
 
 function getArrowOffset(scroll) {
-    if (scroll > 400) return "100px";
+    if (scroll > 400) return "500px";
 
-    let offset = (scroll / 400) * 100;
+    let offset = (scroll / 400) * 500;
 
     return offset.toString().concat("px");
 }
