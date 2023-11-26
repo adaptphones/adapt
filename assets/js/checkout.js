@@ -74,26 +74,64 @@ function decode(data) {
     return retString
 }
 
-// Fetches the product which was stored on the shop page now that the user is on the checkout page
+// Scroll animation functions
+function getNameOffset(scroll) {
+    if (scroll > 800) return (-50 - (scroll - 800)).toString().concat("px");
+    return (150 - (scroll / 4)).toString().concat("px");
+}
+
+function getDescOffset(scroll) {
+    if (scroll > 800) return (250 - (scroll - 800)).toString().concat("px");
+    return (450 - (scroll / 4)).toString().concat("px");
+}
+
+function getPriceOffset(scroll) {
+    if (scroll > 800) return (175 - (scroll - 800)).toString().concat("px");
+    return (375 - (scroll / 4)).toString().concat("px");
+}
+
+function getAddCartOffset(scroll) {
+    if (scroll > 800) return "1500px";
+    return ((900 + (scroll)) - (scroll / 4)).toString().concat("px");
+}
+
+function getImgOffset(scroll) {
+    if (scroll > 800) return "950px";
+    return (scroll + 150).toString().concat("px");
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     
+    // Fetches the product which was stored on the shop page now that the user is on the checkout page
     // Get stored string
     const urlParams = new URLSearchParams(window.location.search);
     const product = decode(urlParams.get('product'));
 
     // Find the elements which will be changed
     const productName = document.getElementById('productName');
+    const productDesc = document.getElementById('productDescription');
+    const productPrice = document.getElementById('productPrice');
+    const productImg = document.getElementById('productImage');
 
     // Load the page based on the product
     switch (product) {
         case 'camera10':
-            productName.innerHTML = "10 MP Camera";
+            productName.innerHTML = "10 MegaPixel Camera";
+            productDesc.innerHTML = "This item is our most budget friendly camera we offer. With this camera you get good quality for a great price.";
+            productPrice.innerHTML = "$79.99";
+            productImg.src = "";
             break;
         case 'camera20':
-            productName.innerHTML = "20 MP Camera";
+            productName.innerHTML = "20 MegaPixel Camera";
+            productDesc.innerHTML = "";
+            productPrice.innerHTML = "";
+            productImg.src = "";
             break;
         case 'camera40':
-            productName.innerHTML = "40 MP Camera";
+            productName.innerHTML = "40 MegaPixel Camera";
+            productDesc.innerHTML = "";
+            productPrice.innerHTML = "";
+            productImg.src = "";
             break;
         case 'product4':
             productName.innerHTML = "product4";
@@ -114,4 +152,29 @@ document.addEventListener('DOMContentLoaded', function () {
             productName.innerHTML = "product9";
             break;
     }
+
+    // Add scroll animations for stuff
+    const name = document.getElementById('productNameContainer');
+    const desc = document.getElementById('productDescriptionContainer');
+    const price = document.getElementById('productPriceContainer');
+    const button = document.getElementById('productAddCart');
+    const img = document.getElementById('productPictureContainer');
+
+    window.addEventListener('scroll', function () {
+        const currentScrollPosition = window.scrollY;
+
+        // Get vertical offset values for elements
+        let nameOffset = getNameOffset(currentScrollPosition);
+        let descOffset = getDescOffset(currentScrollPosition);
+        let priceOffset = getPriceOffset(currentScrollPosition);
+        let buttonOffset = getAddCartOffset(currentScrollPosition);
+        let imgOffset = getImgOffset(currentScrollPosition);
+
+        // Set the style values
+        name.style.top = nameOffset;
+        desc.style.top = descOffset;
+        price.style.top = priceOffset;
+        button.style.top = buttonOffset;
+        img.style.top = imgOffset;
+    });
 });
