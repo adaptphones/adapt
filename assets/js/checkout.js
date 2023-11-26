@@ -118,38 +118,56 @@ document.addEventListener('DOMContentLoaded', function () {
         case 'camera10':
             productName.innerHTML = "10 MegaPixel Camera";
             productDesc.innerHTML = "This item is our most budget friendly camera we offer. With this camera you get good quality for a great price.";
-            productPrice.innerHTML = "$79.99";
-            productImg.src = "";
+            productPrice.innerHTML = "$39.99";
+            productImg.src = "assets/img/camera.png";
             break;
         case 'camera20':
             productName.innerHTML = "20 MegaPixel Camera";
-            productDesc.innerHTML = "";
-            productPrice.innerHTML = "";
-            productImg.src = "";
+            productDesc.innerHTML = "This is a great middle of the road camera which gives a nice balance between price and quality. If youre not sure which camera to choose, this one is a great option.";
+            productPrice.innerHTML = "$69.99";
+            productImg.src = "assets/img/camera.png";
             break;
         case 'camera40':
             productName.innerHTML = "40 MegaPixel Camera";
-            productDesc.innerHTML = "";
-            productPrice.innerHTML = "";
-            productImg.src = "";
+            productDesc.innerHTML = "This is our highest quality camera with 40 MegaPixels, if you're an avid photographer, or just love having the highest quality tech, this is the camera for you.";
+            productPrice.innerHTML = "$99.99";
+            productImg.src = "assets/img/camera.png";
             break;
-        case 'product4':
-            productName.innerHTML = "product4";
+        case 'battery3000':
+            productName.innerHTML = "3000 mAh Battery";
+            productDesc.innerHTML = "This is our standard phone battery. The charge will last ~12 hours of use, so this is the best option for someone who doesnt use thier phone much throughout the day.";
+            productPrice.innerHTML = "$49.99";
+            productImg.src = "assets/img/battery.png";
             break;
-        case 'product5':
-            productName.innerHTML = "product5";
+        case 'battery5000':
+            productName.innerHTML = "5000 mAh Battery";
+            productDesc.innerHTML = "This battery is slightly bigger than our 3000 mAh option, and will last ~20 hours of use. This is a great option for anyone as it gives the best balance between price and charge.";
+            productPrice.innerHTML = "$79.99";
+            productImg.src = "assets/img/battery.png";
             break;
-        case 'product6':
-            productName.innerHTML = "product6";
+        case 'battery10000':
+            productName.innerHTML = "10000 mAh Battery";
+            productDesc.innerHTML = "This is our biggest battery avaliable. The charge will last ~40 hours of use, so this is the perfect option for someone who is not able to charge their phone everyday.";
+            productPrice.innerHTML = "$109.99";
+            productImg.src = "assets/img/battery.png";
             break;
-        case 'product7':
-            productName.innerHTML = "product7";
+        case 'display480x800':
+            productName.innerHTML = "480 x 800 Display";
+            productDesc.innerHTML = "This is our lowest resolution display avaliable. This is the perfect option for someone who uses their phone primarily for texting/calling and not streaming video.";
+            productPrice.innerHTML = "$69.99";
+            productImg.src = "assets/img/display.png";
             break;
-        case 'product8':
-            productName.innerHTML = "product8";
+        case 'display720x1280':
+            productName.innerHTML = "720 x 1280 Display";
+            productDesc.innerHTML = "This is the standard phone resolution. Great for anyone who doesnt need a super high res display but still wants to stream videos.";
+            productPrice.innerHTML = "$99.99";
+            productImg.src = "assets/img/display.png";
             break;
-        case 'product9':
-            productName.innerHTML = "product9";
+        case 'display1440x2560':
+            productName.innerHTML = "1440 x 2560 Display";
+            productDesc.innerHTML = "This is our super high res display. With this, anything you are looking at will appear super crisp and clean. This display pairs perfectly with our 40 MegaPixel camera.";
+            productPrice.innerHTML = "$149.99";
+            productImg.src = "assets/img/display.png";
             break;
     }
 
