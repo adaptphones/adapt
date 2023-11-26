@@ -77,3 +77,34 @@ body {
     color: black;
     font-size: 20px;
   }
+
+  .support_form{
+    width: 800px; 
+    max-height: 250px;
+    border-radius: 15px; 
+    background-color:  #110438; 
+    padding: 40px 30px 50px 30px; 
+    margin:  auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+  }
+
+ #supportMessage {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  #submitbutton{
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #1d96be;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
