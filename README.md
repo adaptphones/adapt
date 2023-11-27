@@ -3,5 +3,5 @@ Team Members:
 - Linden Sheehy - 300287097 ( Shop and Checkout Pages )
 - Adrius Avenido  ( Support Page )
 - Ralph Nabhan  ( Features Page )
-- Nitish  ( About Us Page )
+- Nithish  ( About Us Page )
 - Wylfreid  ( Home Page )
